@@ -13,7 +13,8 @@ import {
   Truck,
   CheckCircle,
   Clock,
-  AlertCircle
+  AlertCircle,
+  Search
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -96,6 +97,57 @@ export default function AISourcing() {
         <p className="text-muted-foreground text-lg mb-6">
           Describe anything you need, and our AI will source it globally with automated payment and tracking
         </p>
+        
+        {/* How It Works Steps */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+          <Card className="text-center p-4 hover:shadow-accent transition-all">
+            <CardContent className="p-4">
+              <div className="h-12 w-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                <Bot className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="font-semibold mb-2">1. Describe</h3>
+              <p className="text-sm text-muted-foreground">
+                Tell our AI what you need in simple terms
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="text-center p-4 hover:shadow-accent transition-all">
+            <CardContent className="p-4">
+              <div className="h-12 w-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                <Search className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="font-semibold mb-2">2. AI Sources</h3>
+              <p className="text-sm text-muted-foreground">
+                Our AI finds the best suppliers globally
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="text-center p-4 hover:shadow-accent transition-all">
+            <CardContent className="p-4">
+              <div className="h-12 w-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                <DollarSign className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="font-semibold mb-2">3. Auto Payment</h3>
+              <p className="text-sm text-muted-foreground">
+                Secure automated payment processing
+              </p>
+            </CardContent>
+          </Card>
+          
+          <Card className="text-center p-4 hover:shadow-accent transition-all">
+            <CardContent className="p-4">
+              <div className="h-12 w-12 bg-gradient-accent rounded-full flex items-center justify-center mx-auto mb-3">
+                <Truck className="h-6 w-6 text-white" />
+              </div>
+              <h3 className="font-semibold mb-2">4. Track & Receive</h3>
+              <p className="text-sm text-muted-foreground">
+                Real-time tracking until delivery
+              </p>
+            </CardContent>
+          </Card>
+        </div>
         
         {/* Sourcing Input */}
         <Card className="max-w-2xl mx-auto">

@@ -63,7 +63,7 @@ export function AppSidebar() {
             </div>
             {!isCollapsed && (
               <span className="text-lg font-bold bg-gradient-primary bg-clip-text text-transparent">
-                SourceAI
+                SourceAnything
               </span>
             )}
           </div>
